@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: #d5f3fb;
+    color: #0a3d5a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .loading-indicator {
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    height: 50px; /* Висота на весь екран */
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Колір фону */
+    border-top: 8px solid #3498db; /* Колір спінера */
+    border-radius: 50%;
+    width: 40px; /* Ширина спінера */
+    height: 40px; /* Висота спінера */
+    animation: spin 1s linear infinite; /* Анімація */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
